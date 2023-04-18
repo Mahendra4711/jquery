@@ -60,6 +60,12 @@ $(".about__vision h2").click(function() {
 
 /*-------Number-count--------*/
 
+ <h1>
+     <span class="counter">
+         2,523
+    </span>
+</h1>
+
 
 $('.count').each(function() {
     $(this).prop('Counter', 0).animate({
