@@ -64,3 +64,176 @@ $(".menu-toggle").click(function() {
     margin-left: 20px !important;
     margin-bottom: 10px;
 }
+
+
+
+
+
+/*menu-toggle*/
+
+
+
+
+
+<header class="site-header">
+    <div class="wrap">
+        <div class="header-wrap">
+            <div class="header__logo">
+                <a href="index.html">
+                    <img src="images/cropmax_Final_logo.png" usemap="vhgvh" alt="">
+                </a>
+            </div>
+            <nav class="navbar">
+                <div class="toggle_nav">
+                    <ul class="primary__nav">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="product.html">Products</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li>
+                            <div class="phone">
+                                <p>Need I help? Talk to an Expert</p>
+                                <span>+91 98795 14661</span>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="social__icons">
+                        <li>
+                            <a href="#"><img src="images/facebook.svg" alt=""></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="images/instagram_icon_138461.svg" alt=""></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="images/twiter_113610 (1).svg" alt=""></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="images/linkedin.svg" alt=""></a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="menu-toggle">
+                <span class="bar1"></span>
+                <span class="bar2"></span>
+                <span class="bar3"></span>
+            </div>
+        </div>
+    </div>
+</header>
+
+<style>
+
+
+/*      
+    $(".menu-toggle").click(function() {
+        $(this).toggleClass("on");
+        $(".navbar").slideToggle();
+    });
+*/
+
+
+.menu-toggle {
+display: none;
+}
+
+.menu-toggle {
+    display: flex;
+    flex-wrap: wrap;
+    width: 40px;
+    height: 28px;
+    z-index: 9;
+    position: relative;
+    margin-left: auto;
+}
+.menu-toggle span {
+    width: 30px;
+    height: 3px;
+    background: #ffffff;
+    transition: all 0.3s;
+    backface-visibility: hidden;
+    display: block;
+}
+.menu-toggle span:first {
+    margin-top: 0;
+}
+.menu-toggle:focus {
+    outline: none;
+}
+.menu-toggle.on .bar1 {
+    transform: rotate(45deg) translate(6px, 5px);
+}
+.menu-toggle.on .bar2 {
+    opacity: 0;
+}
+.menu-toggle.on .bar3 {
+    transform: rotate(-45deg) translate(8px, -8px);
+}
+.social__icon {
+    display: none;
+    position: absolute;
+    top: 80px;
+    right: 0;
+}
+.navbar .toggle_nav .social__icons {
+    display: flex;
+    padding: 100px 30px 30px 30px;
+    background: rgba(56, 40, 40, 0.5);
+    backdrop-filter: blur(5px);
+    height: auto;
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    z-index: 2;
+    flex-direction: column-reverse;
+}
+.navbar .social__icons li {
+    padding: 0;
+    margin-top: 30px;
+}
+.social__icons li a img {
+    width: 25px;
+}
+.toggle_nav {
+    display: flex;
+    height: 100%;
+}
+.navbar {
+    display: none;
+    position: absolute;
+    top: 0px;
+    height: 100vh;
+    right: 0;
+}
+.navbar .toggle_nav .primary__nav {
+    display: block;
+    padding: 30px;
+    background: rgba(9, 75, 38, 0.8);
+    backdrop-filter: blur(10px);
+    width: 100%;
+    height: auto;
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    z-index: 2;
+}
+.navbar .toggle_nav .primary__nav li {
+    margin-bottom: 25px;
+}
+.primary__nav li:last-child {
+    position: absolute;
+    bottom: 35px;
+    right: 0;
+    display: block;
+}
+.phone {
+    text-align: end;
+    border-left: 1px solid transparent;
+}
+.phone p {
+    font-size: 20px;
+}
+.phone span {
+    font-size: 18px;
+    color: #42ff97;
+}
+
+</style>
