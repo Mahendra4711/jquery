@@ -133,12 +133,16 @@ $(".menu-toggle").click(function() {
 <style>
 
 
-/*      
+      
     $(".menu-toggle").click(function() {
         $(this).toggleClass("on");
         $(".navbar").slideToggle();
+      /*$(".navbar").animate({
+            width: "toggle"
+      }); */
+      });
     });
-*/
+
 
 
 .menu-toggle {
