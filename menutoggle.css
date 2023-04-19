@@ -12,7 +12,9 @@ $(".menu-toggle").click(function() {
 .menu-toggle {
     display: none;
 }
-.menu-toggle {
+
+@media only screen and (max-width: 600px) {
+  .menu-toggle {
     display: flex;
     flex-wrap: wrap;
     width: 40px;
@@ -63,6 +65,7 @@ $(".menu-toggle").click(function() {
 .navbar ul li {
     margin-left: 20px !important;
     margin-bottom: 10px;
+}
 }
 
 
@@ -137,6 +140,8 @@ $(".menu-toggle").click(function() {
 display: none;
 }
 
+
+@media only screen and (max-width: 600px) {
 .menu-toggle {
     display: flex;
     flex-wrap: wrap;
@@ -234,6 +239,7 @@ display: none;
 .phone span {
     font-size: 18px;
     color: #42ff97;
+}
 }
 
 </style>
