@@ -112,3 +112,21 @@ $('.count').each(function() {
         }
     });
 });
+
+
+
+/*---------slick-slider----------*/
+
+
+$(document).ready(function(){
+    $('.herobanner__img').slick({
+        dots: true,
+        infinite: true,
+        speed: 3000,
+        slidesToShow: 1,
+        autoplay: true,
+        autoplaySpeed: 0,
+        adaptiveHeight: true,
+        pauseOnHover:false
+      });
+  });
